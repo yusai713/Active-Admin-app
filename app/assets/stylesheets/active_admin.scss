@@ -15,3 +15,43 @@
 // For example, to change the default status-tag color:
 //
 //   .status_tag { background: #6090DB; }
+
+
+/*---ユーザー一覧---*/
+.buttun_box {
+  text-align: center;
+  margin: 50px auto;
+
+  button {
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid #c3d9ff;
+    background: #c3d9ff;
+
+    &:hover {
+      opacity: 0.7;
+      background: #c3d9ff !important;
+    }
+
+    a {
+      text-decoration: none !important;
+      color: #5E6469 !important;
+      text-shadow: none !important;
+      font-size: 16px;
+    }
+  }
+}
+
+/*---検索一覧---*/
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search_box {
+  margin: 30px auto;
+  text-align: center;
+  width: 500px;
+}

@@ -1,0 +1,28 @@
+<%= form_tag('/users/search', method: :get) do %>
+<h1>ユーザー情報検索</h1>
+<div class="search_box"><%= label_tag :名前 %>：
+  <%= text_field_tag :search_name %></div class="search_box">
+<div class="search_box"><%= label_tag :年齢 %>：
+  <%= text_field_tag :search_age %></div class="search_box">
+<div class="search_box"><%= label_tag :住所 %>：
+  <%= text_field_tag :search_address %></div class="search_box">
+<div class="search_box"><%= submit_tag '検索' %></div class="search_box">
+<% end %>
+<table>
+  <tbody>
+    <thead>
+      <tr>
+        <th>名前</th>
+        <th>年齢</th>
+        <th>住所</th>
+      </tr>
+    </thead>
+    <% @users.each do |user| %>
+    <tr>
+      <td><%= user.name %></td>
+      <td><%= user.age %></td>
+      <td><%= user.address %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

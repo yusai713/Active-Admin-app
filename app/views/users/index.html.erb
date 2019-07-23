@@ -1,0 +1,24 @@
+<h1>ユーザー一覧</h1>
+<table>
+  <tbody>
+    <thead>
+      <tr>
+        <th>名前</th>
+        <th>年齢</th>
+        <th>住所</th>
+      </tr>
+    </thead>
+    <% @users.each do |user| %>
+    <tr>
+      <td><%= user.name %></td>
+      <td><%= user.age %></td>
+      <td><%= user.address %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<div class="buttun_box">
+  <button>
+    <%= link_to "ユーザー情報検索へ" , "/users/search" %>
+  </button>
+</div>
