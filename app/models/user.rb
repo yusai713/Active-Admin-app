@@ -1,5 +1,6 @@
 class User < ApplicationRecord
 
+  # Rspec用のコード
   attr_accessor :test_name, :test_age
 
   def initialize(test_name:,test_age:)
