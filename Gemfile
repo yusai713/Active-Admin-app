@@ -70,3 +70,7 @@ gem 'rails-i18n'
 
 # 検索機能
 gem 'ransack'
+
+# 画像投稿機能
+gem 'carrierwave'
+gem 'rmagick'
