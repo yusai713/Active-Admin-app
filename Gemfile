@@ -74,3 +74,8 @@ gem 'ransack'
 # 画像投稿機能
 gem 'carrierwave'
 gem 'rmagick'
+
+# Rspec
+group :development, :test do
+  gem 'rspec-rails'
+end
