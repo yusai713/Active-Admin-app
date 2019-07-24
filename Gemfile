@@ -79,3 +79,8 @@ gem 'rmagick'
 group :development, :test do
   gem 'rspec-rails'
 end
+
+# markdown
+gem 'redcarpet', '~> 2.3.0'
+# シンタックスハイライト
+gem 'coderay'

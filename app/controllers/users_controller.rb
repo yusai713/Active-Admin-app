@@ -7,6 +7,8 @@ class UsersController < ApplicationController
     @users = user_search.execute
   end
 
+  def mark; end
+
   private
 
   def params_user_search

@@ -1,0 +1,14 @@
+<nav>
+  <%= link_to "管理画面","/admin" %>
+  <%= link_to "ユーザー一覧", "/users" %>
+  <%= link_to "画像投稿画面", new_post_path %>
+  <%= link_to "Markdown", "/users/mark" %>
+</nav>
+
+<h1 class="greet">
+  <%= @greet %>
+</h1>
+
+<footer>
+  <small>© 2019　西原</small>
+</footer>
