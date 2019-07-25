@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   get '/users', to: 'users#index'
   get '/users/search', to: 'users#search'
   get '/users/mark', to: 'users#mark'
+  get '/users/chart', to: 'users#chart'
   resources :posts
 end
