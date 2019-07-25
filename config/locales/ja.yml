@@ -1,8 +1,8 @@
 ja:
   activerecord:
     models:
-      user: "ユーザー一覧"
-      comment: "コメント一覧"
+      user: "ユーザー"
+      comment: "コメント"
       admin_user: "管理者"
     attributes:
       user:

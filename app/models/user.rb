@@ -1,12 +1,12 @@
 class User < ApplicationRecord
 
   # Rspec用のコード
-  attr_accessor :test_name, :test_age
+  #attr_accessor :test_name, :test_age
 
-  def initialize(test_name:,test_age:)
-    @test_name = test_name
-    @test_age = test_age
-  end
+  #def initialize(test_name:,test_age:)
+   # @test_name = test_name
+   # @test_age = test_age
+  #end
 
   def disp_name
     if @test_age > 19
