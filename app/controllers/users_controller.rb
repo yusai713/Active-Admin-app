@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   def index
     @users = User.all
   end
+
   def search
     user_search = UserSearch.new(params_user_search)
     @users = user_search.execute

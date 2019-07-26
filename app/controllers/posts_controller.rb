@@ -8,14 +8,14 @@ class PostsController < ApplicationController
   end
 
   def create
-  Post.create(post_params)
-  # 投稿完了後、すぐに一覧表示画面へ遷移
-  redirect_to :action => :index
-end
+    Post.create(post_params)
+    # 投稿完了後、すぐに一覧表示画面へ遷移
+    redirect_to :action => :index
+  end
 
-private
+  private
 
-def post_params
-  params.require(:post).permit(:image)
-end
+  def post_params
+    params.require(:post).permit(:image)
+  end
 end
